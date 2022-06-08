@@ -1,0 +1,186 @@
+body {
+
+    width: 414px;
+
+    background-color: #E5E5E5;
+
+}
+
+.topbox {
+
+    height: 100px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    padding: 8px 0 18px 21px;
+
+    background-color: #CF2B2B;
+    /*background-color: rgba(207, 43, 43, 1);*/
+
+    /*drop shadow?*/
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.top_logos .top_title {
+
+    height: 44px;
+    width: 248px;
+
+    display: flex;
+    
+    background-color: green;
+
+}
+
+.top_title span {
+
+    /*font-family: Righteous*/
+
+    font-size: 44px;
+    
+    color: #FFFFFF;
+
+}
+
+
+.top_logos .top_slogan {
+
+    height: 17px;
+    width: 226px;
+
+    display: flex;
+    align-items: flex-end;
+
+    font-size: 18px;
+
+    color: #FFFFFF;
+    background-color: blue;
+
+}
+
+.top_slogan span {
+
+    /*font-family: Righteous;*/
+
+    font-size: 18px;
+
+    color: #FFFFFF;
+    
+}
+
+.options {
+    margin: 31px 0 0 19px;
+}
+
+.menu {
+
+    display: flex;
+    flex-direction: column;
+
+    border: 5px solid cyan;
+
+    margin: 0 0 40px 0;
+
+}
+
+.menu_options {
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    border: 5px solid black;
+
+}
+
+
+.menu_options .menu_card {
+
+    display: flex;
+    /*align-items: flex-start;
+    justify-content: center;*/
+    flex-direction: column;
+
+
+    /*height: 216px;*/
+    width: 172px;
+
+    border: 5px solid orange;
+    border-radius: 9px;
+
+    margin: 0 16px 0 0;
+
+    /*position: relative;*/
+}
+
+.menu_thumbnail {
+    border: 5px solid red;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+
+}
+
+.menu_card img {
+
+    /*position: absolute;*/
+
+    height: 87px;
+    width: 144px;
+
+    border-radius: 4px;
+
+    margin: 18px 14px 8px 14px;
+
+}
+
+.menu_card_desc{
+
+    /*margin: 113px 0px 8px 0px;*/
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    height: 100%;
+
+    border: 5px solid blueviolet;
+
+}
+
+.card_title {
+
+    width: 140px;
+    height: 23px;
+    margin: 0 0 4px 0;
+
+
+}
+
+.card_content_line {
+
+    width: 147px;
+    height: 18px;
+
+
+}
+
+.card_value {
+
+
+    margin: 9px 0 0 0;
+
+}
