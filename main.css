@@ -128,7 +128,10 @@ body {
     display: flex;
     align-items: center;
 
-    overflow: hidden;
+    /*overflow: hidden;*/
+    
+    overflow-x: scroll;
+    overflow-y: hidden;
 
     /*border: 5px solid black;*/
 
