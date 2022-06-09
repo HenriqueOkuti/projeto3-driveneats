@@ -187,7 +187,41 @@ body {
 
 
 .checkout {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 92px;
+    width: 100%;
+
     position: sticky;
     bottom: 0;
     left: 0;
+
+    background-color: #FFFFFF;
+
+}
+
+.closed_checkout {
+
+    display: none;
+
+}
+
+.open_checkout {
+
+    height: 61px;
+    width: 364px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    border-radius: 50px;
+    background-color: #CBCBCB;
+
+    font-size: 20px;
+
 }
