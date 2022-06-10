@@ -11,6 +11,11 @@ body {
     font-family: 'Roboto';
     color: black;
 
+}
+
+a {
+
+    text-decoration: none;
 
 }
 
@@ -156,6 +161,12 @@ body {
 
 }
 
+.options .row .row_menu .type.selected {
+
+    border: 5px solid #32b72f;
+
+} 
+
 .item_title {
 
     margin: 11px 0 15px 0;
@@ -202,18 +213,17 @@ body {
 }
 
 
-.item_confirmation {
+.type .item_confirmation {
 
-
+    opacity: 0;
     color: #32B72F;
     font-size: 20px;
 
-    opacity: 0;
-
 }
 
-.item_confirmation.selected {
+.options .row .row_menu .type.selected .item_confirmation{
     opacity: 1;
+
 }
 
 /*========================
@@ -239,3 +249,46 @@ body {
 
 }
 
+.open_checkout {
+
+    width: 364px;
+    height: 61px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50px;
+
+    background-color: #CBCBCB;
+
+
+}
+
+.open_checkout ul {
+
+    font-size: 20px;
+    font-weight: 400;
+
+    color: #FFFFFF;
+
+}
+
+.checkout .order.active {
+
+    width: 364px;
+    height: 61px;
+    border-radius: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 700;
+    font-size: 20px;
+
+    background-color: #32b72f;
+
+    color: #FFFFFF;
+
+}
