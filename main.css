@@ -166,8 +166,23 @@ body {
     /*position: relative;*/
 }
 
+.border_chosen {
+    
+    position: sticky;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    
+    border: 5px solid green;
+}
 
+.border_unchosen {
+    border: none;
+}
+
+/*
 .color {
 
     border: 5px solid green;
@@ -179,6 +194,7 @@ body {
     border: none;
 
 }
+*/
 
 .menu_thumbnail {
     /*border: 5px solid red;*/

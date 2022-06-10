@@ -1,34 +1,53 @@
 /*========================
     CARD
 ========================*/
-
-function click_counter() {
-   flag_choose = 0;
-}
-
-
-function choose_option() {
+/*
+function choose_option1(selected) {
     const to_hide_color = document.querySelector(".hidden");
     const to_hide_arrow = document.querySelector(".hidden_arrow");
+
+    if (selected !== null){
+        selected.classList.toggle("hidden");
+        selected.classList.toggle("hidden_arrow");
+    }
 
     to_hide_color.classList.toggle("hidden");
     to_hide_arrow.classList.toggle("hidden_arrow");
 
-    /*
-    if (flag_choose == 0){
-    to_hide_color.classList.remove("hidden");
-    to_hide_arrow.classList.remove("hidden_arrow");
+}*/
 
-    flag_choose = flag_choose ;
+function choose_option1(selected){
+    const unselected = document.querySelector(".border_chosen");
+    if (unselected !== null){
+        unselected.classList.remove("border_chosen");
     }
 
-    else if (flag_choose > 1){
-        to_hide_color.classList.add("hidden");
-        to_hide_arrow.classList.add("hidden_arrow");  
+    selected.classList.toggle("border_chosen");
+    
+    console.log("It's not breaking at least");
 
-        flag_choose = 0;
+}
+function choose_option2(selected){
+    const unselected = document.querySelector(".border_chosen");
+    if (unselected !== null){
+        unselected.classList.remove("border_chosen");
     }
-    */
+
+    selected.classList.toggle("border_chosen");
+    
+    console.log("It's not breaking at least");
+}
+function choose_option3(selected){
+    const unselected = document.querySelector(".border_chosen");
+    if (unselected !== null){
+        unselected.classList.remove("border_chosen");
+    }
+
+    selected.classList.toggle("border_chosen");
+    
+    console.log("It's not breaking at least");
+}
+function choose_option4(selected){
 
 }
 
