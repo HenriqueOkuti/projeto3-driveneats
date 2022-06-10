@@ -208,10 +208,13 @@ body {
     color: #32B72F;
     font-size: 20px;
 
-    /*padding: 0 0 0 100px;*/
+    opacity: 0;
 
 }
 
+.item_confirmation.selected {
+    opacity: 1;
+}
 
 /*========================
     CHECKOUT
@@ -236,48 +239,3 @@ body {
 
 }
 
-.open_checkout {
-
-    height: 61px;
-    width: 364px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-    border-radius: 50px;
-    background-color: #CBCBCB;
-
-    font-size: 20px;
-    color: #FFFFFF;
-
-}
-
-.open_hidden {
-
-    display: none;
-
-}
-
-.closed_checkout {
-    
-    height: 61px;
-    width: 364px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-    border-radius: 50px;
-    background-color: #32B72F;
-
-    font-size: 20px;
-    color: #FFFFFF;
-
-}
-
-.closed_hidden {
-    display: none;
-}

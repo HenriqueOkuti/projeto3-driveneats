@@ -41,10 +41,10 @@
 
         <div class="row">
             <div class="row_title">Primeiro, seu prato</div>
-            <div class="row_menu menu">
+            <div class="row_menu maindish">
 
 
-                <div class="type item_adeptustemptation">
+                <div class="type item_adeptustemptation" onclick="select_maindish(this);">
                     <img src="photos/adeptus-temptation.png"/>
                     <div class="item_title">
                         Adeptus' Temptation
@@ -65,7 +65,7 @@
                 </div>
 
 
-                <div class="type item_bountifulyear">
+                <div class="type item_bountifulyear" onclick="select_maindish(this);">
                     <img src="photos/bountiful-year.png"/>
                     <div class="item_title">
                         Bountiful Year
@@ -86,7 +86,7 @@
                 </div>
 
 
-                <div class="type item_buttercrab">
+                <div class="type item_buttercrab" onclick="select_maindish(this);">
                     <img src="photos/butter-crab.png"/>
                     <div class="item_title">
                         Butter Crab
@@ -107,7 +107,7 @@
                 </div>
 
 
-                <div class="type item_goldenfriedchicken">
+                <div class="type item_goldenfriedchicken" onclick="select_maindish(this);">
                     <img src="photos/golden-fried-chicken.png"/>
                     <div class="item_title">
                         Golden Fried Chicken
@@ -128,7 +128,7 @@
                 </div>
 
 
-                <div class="type item_goldenchickenburger">
+                <div class="type item_goldenchickenburger" onclick="select_maindish(this);">
                     <img src="photos/golden-chicken-burger.png"/>
                     <div class="item_title">
                         Golden Chicken Burger
@@ -156,10 +156,10 @@
 
         <div class="row">
             <div class="row_title">Agora, sua bebida</div>
-            <div class="row_menu menu">
+            <div class="row_menu drink">
 
 
-                <div class="type item_rainbowaster">
+                <div class="type item_rainbowaster" onclick="select_drink(this);">
                     <img src="photos/rainbow-aster.png"/>
                     <div class="item_title">
                         Rainbow Aster
@@ -180,7 +180,7 @@
                 </div>
 
 
-                <div class="type item_applecider">
+                <div class="type item_applecider" onclick="select_drink(this);">
                     <img src="photos/apple-cider.png"/>
                     <div class="item_title">
                         Apple Cider
@@ -201,7 +201,7 @@
                 </div>
 
 
-                <div class="type item_berrymintburst">
+                <div class="type item_berrymintburst" onclick="select_drink(this);">
                     <img src="photos/berry-mint-burst.png"/>
                     <div class="item_title">
                         Berry & Mint Burst
@@ -222,7 +222,7 @@
                 </div>
 
 
-                <div class="type item_dangomilk">
+                <div class="type item_dangomilk" onclick="select_drink(this);">
                     <img src="photos/dango-milk.png"/>
                     <div class="item_title">
                         Dango Milk
@@ -251,10 +251,10 @@
 
         <div class="row">
             <div class="row_title">Por fim, sua sobremesa</div>
-            <div class="row_menu menu">
+            <div class="row_menu dessert" >
 
 
-                <div class="type item_sakuramochi">
+                <div class="type item_sakuramochi" onclick="select_dessert(this);">
                     <img src="photos/sakura-mochi.png"/>
                     <div class="item_title">
                         Sakura Mochi
@@ -275,7 +275,7 @@
                 </div>
 
 
-                <div class="type item_ricepudding">
+                <div class="type item_ricepudding" onclick="select_dessert(this);">
                     <img src="photos/rice-pudding.png"/>
                     <div class="item_title">
                         Rice Pudding
@@ -296,7 +296,7 @@
                 </div>
 
 
-                <div class="type item_mintjelly">
+                <div class="type item_mintjelly" onclick="select_dessert(this);">
                     <img src="photos/mint-jelly.png"/>
                     <div class="item_title">
                         Mint Jelly
@@ -328,8 +328,10 @@
     <div class="checkout">
 
         <button class="open_checkout open_hidden">
+            <a href="#" class="" onclick="finishorder()">
             <ul>Selecione os 3 itens</ul>
             <ul>para fechar o pedido</ul>
+        </a>
         </button>
 
         <button class="closed_checkout closed_hidden">
@@ -338,8 +340,6 @@
 
 
     </div>
-
-
 
     <script src="script.js"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
