@@ -137,3 +137,22 @@ table {
 * {
   box-sizing: border-box;
 }
+
+button, input[type="submit"], input[type="reset"] {
+	background: inherit;
+	color: inherit;
+	border: inherit;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  
+  text-align: inherit;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+  text-transform: inherit;
+  text-indent: inherit;
+  text-shadow: inherit;
+  text-rendering: inherit;
+
+}

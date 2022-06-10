@@ -138,7 +138,15 @@ body {
 }
 
 
-.menu_options .menu_card {
+.menu_options .menu_choice {
+
+    height: 100%;
+    width: 172px;
+    margin: 0 16px 0 0;
+
+}
+
+.menu_card {
 
     display: flex;
     /*align-items: flex-start;
@@ -152,12 +160,13 @@ body {
     /*border: 5px solid orange;*/
     border-radius: 9px;
 
-    margin: 0 16px 0 0;
 
     background-color: #FFFFFF;
 
     /*position: relative;*/
 }
+
+
 
 .color {
 
@@ -247,8 +256,8 @@ body {
 .confirmed_arrow {
 
     position: relative;
-    left: 8.5vw;
-    bottom: 3vh;
+    left: 85%;
+    bottom: 60%;
     z-index: 0;
 
     height: 15.44px;
@@ -264,6 +273,10 @@ body {
     display: none;
 }
 
+.confirmed_arrow ion-icon {
+    
+
+}
 
 .checkout {
 
