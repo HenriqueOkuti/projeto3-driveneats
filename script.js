@@ -11,6 +11,8 @@ let type_maindish = "";
 let type_drink = "";
 let type_dessert = "";
 
+let order_text;
+
 /*========================
     AUXILIAR FUNCTIONS
 ========================*/
@@ -36,13 +38,10 @@ function select_item() {
                 buttom_order.innerHTML = "Fechar pedido"
 
                 const total = price_maindish + price_drink + price_drink;
-                const order_text = `Olá, gostaria de fazer o pedido: \n
-                Prato: ${type_maindish} \n
-                Bebida: ${type_drink} \n
-                Sobremesa: ${type_dessert} \n
-                Total: R$ ${(total).toFixed(2)}`;
+                order_text = `Olá, gostaria de fazer o pedido: \nPrato: ${type_maindish} \nBebida: ${type_drink} \nSobremesa: ${type_dessert} \nTotal: R$ ${(total).toFixed(2)}`;
 
                 console.log(`Total: ${total.toFixed(2)}`);
+                console.log(order_text);
         
             }
         }
