@@ -159,6 +159,18 @@ body {
     /*position: relative;*/
 }
 
+.color {
+
+    border: 5px solid green;
+
+}
+
+.hidden {
+
+    border: none;
+
+}
+
 .menu_thumbnail {
     /*border: 5px solid red;*/
 
@@ -248,7 +260,7 @@ body {
 
 }
 
-.confirmed_arrow ion-icon {
+.hidden_arrow {
     display: none;
 }
 
@@ -271,27 +283,6 @@ body {
 
 }
 
-.closed_checkout {
-
-    display: none;
-
-    /* USE BELLOW VALUES FOR CONDITIONAL */
-    /*height: 61px;
-    width: 364px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-    border-radius: 50px;
-    background-color: #32B72F;
-
-    font-size: 20px;
-    color: #FFFFFF;*/
-
-}
-
 .open_checkout {
 
     height: 61px;
@@ -308,4 +299,32 @@ body {
     font-size: 20px;
     color: #FFFFFF;
 
+}
+
+.open_hidden {
+
+    display: none;
+
+}
+
+.closed_checkout {
+    
+    height: 61px;
+    width: 364px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    border-radius: 50px;
+    background-color: #32B72F;
+
+    font-size: 20px;
+    color: #FFFFFF;
+
+}
+
+.closed_hidden {
+    display: none;
 }
