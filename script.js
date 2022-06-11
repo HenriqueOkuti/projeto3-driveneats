@@ -116,7 +116,7 @@ function select_dessert(part) {
 
 function finish_order() {
 
-    const whatsapp = `https://wa.me/5516982266324?text=${encodeURIComponent(order_text)}`;
+    const whatsapp = `https://wa.me/55999999999?text=${encodeURIComponent(order_text)}`;
 
     window.open(whatsapp);
 
