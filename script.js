@@ -31,18 +31,28 @@ function select_item() {
 
     if (price_maindish !== undefined && price_drink !== undefined && price_dessert !== undefined) {
 
-        const buttom_order = document.querySelector(".checkout a")
-        buttom_order.classList.add("active");
-        buttom_order.innerHTML = "Fechar pedido"
+        const buttom_order = document.querySelector(".checkout button")
+        
+        buttom_order.classList.add("open_hidden");
+        buttom_order.innerHTML = "";
+        
 
-        const total = price_maindish + price_drink + price_drink;
+        const buttom_order2 = document.querySelector(".checkout a")
+
+        buttom_order2.classList.add("active");
+        
+        /*buttom_order.classList.remove("button");*/
+        buttom_order2.innerHTML = "Fechar pedido"
+
+        const total = price_maindish + price_drink + price_dessert;
         order_text = `Olá, gostaria de fazer o pedido: \n- Prato: ${type_maindish} \n- Bebida: ${type_drink} \n- Sobremesa: ${type_dessert} \nTotal: R$ ${(total).toFixed(2)} `;
 
-
+        /*
         console.log(`Total: ${total.toFixed(2)}`);
         console.log(order_text);
 
         console.log(type_maindish, type_drink, type_dessert);
+        */
 
     }
 }
@@ -116,7 +126,7 @@ function select_dessert(part) {
 
 function finish_order() {
 
-    const whatsapp = `https://wa.me/55999999999?text=${encodeURIComponent(order_text)}`;
+    const whatsapp = `https://wa.me/5516982266324?text=${encodeURIComponent(order_text)}`;
 
     window.open(whatsapp);
 
