@@ -5,7 +5,8 @@
 
 body {
 
-    width: 414px;
+    width: 100%;
+
     background-color: #E5E5E5;
 
     font-family: 'Roboto';
@@ -41,7 +42,6 @@ a {
     padding: 8px 0 18px 21px;
 
     background-color: #CF2B2B;
-    /*background-color: rgba(207, 43, 43, 1);*/
 
     /*drop shadow?*/
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -82,13 +82,10 @@ a {
     font-weight: 400;
 
     color: #FFFFFF;
-    /*background-color: blue;*/
 
 }
 
 .top_slogan span {
-
-    /*font-family: Righteous;*/
 
     font-size: 18px;
 
@@ -155,7 +152,7 @@ a {
     width: 144px;
     height: 87px;
 
-    border-radius: 25%;
+    border-radius: 5px;
 
     object-fit: cover;
 
@@ -163,7 +160,6 @@ a {
 
 .options .row .row_menu .type.selected {
 
-    border: 5px solid #32b72f;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
 
 } 
@@ -196,10 +192,10 @@ a {
 
 .value_box {
 
-    height: 24px;
+    height: auto;
 
     display: flex;
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: space-between;
 
     margin: 0 0 13px 0;
@@ -295,5 +291,184 @@ a {
     background-color: #32b72f;
 
     color: #FFFFFF;
+
+}
+
+
+.overlay.hidden_overlay {
+
+    display: none;
+
+}
+
+.overlay.show {
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    z-index: 200;
+
+    height: 100%;
+    width: 100%;
+
+    background-color: rgba(255,255,255,0.9);
+
+    color: #fff;
+
+
+}
+
+.order_check {
+
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+
+
+    position: fixed;
+    z-index: 201;
+
+    width: 100%;
+
+
+    background-color: rgba(80, 208, 116, 1);
+
+    width: 377px;
+    height: 353px;
+
+}
+
+.overlay_title {
+
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+
+    margin: 21px 0 28px 0;
+
+}
+
+.order_info {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+
+    height: 145px;
+    width: 100%;
+
+
+}
+
+.maindish_row , .drink_row , .dessert_row, .total_row {
+
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 26px 13px 26px;
+
+    width: 85%;
+
+}
+
+
+.total_row {
+
+    font-weight: 700;
+
+}
+
+.confirm_button {
+
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 24px 0 0 10px;
+
+}
+
+.confirm_button a {
+
+    height: 52px;
+    width: 329px;
+
+    background-color: #FFF;
+    border-radius: 50px;
+
+    color: #50D074;
+
+    font-weight: 700;
+    font-size: 22px;
+
+    text-align: center;
+
+    line-height: 26px;
+
+    padding: 12px;
+
+
+}
+
+.cancel_button {
+
+    margin: 0 0 0 10px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 50%;
+    height: 52px;
+    background-color: none;
+
+    font-weight: 700;
+    font-size: 20px;
+
+
+}
+
+.overlay_thankyou.showthanks {
+
+        display: flex;
+    
+        align-items: center;
+        justify-content: center;
+    
+    
+        position: fixed;
+    
+        top: 50%;
+        left: 50%;
+        z-index: 200;
+    
+        height: 100%;
+        width: 100%;
+    
+        background-color: rgba(255,255,255,0.9);
+
+}
+
+.overlay_thankyou.hidden_overlay {
+
+    display: none;
 
 }

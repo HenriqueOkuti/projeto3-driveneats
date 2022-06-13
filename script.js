@@ -40,19 +40,10 @@ function select_item() {
         const buttom_order2 = document.querySelector(".checkout a")
 
         buttom_order2.classList.add("active");
-        
-        /*buttom_order.classList.remove("button");*/
-        buttom_order2.innerHTML = "Fechar pedido"
+        buttom_order2.innerHTML = "Fechar pedido";
 
-        const total = price_maindish + price_drink + price_dessert;
+        total = price_maindish + price_drink + price_dessert;
         order_text = `Olá, gostaria de fazer o pedido: \n- Prato: ${type_maindish} \n- Bebida: ${type_drink} \n- Sobremesa: ${type_dessert} \nTotal: R$ ${(total).toFixed(2)} `;
-
-        /*
-        console.log(`Total: ${total.toFixed(2)}`);
-        console.log(order_text);
-
-        console.log(type_maindish, type_drink, type_dessert);
-        */
 
     }
 }
@@ -123,33 +114,73 @@ function select_dessert(part) {
     CHECKOUT
 ========================*/
 
-
 function finish_order() {
 
-    const whatsapp = `https://wa.me/5516982266324?text=${encodeURIComponent(order_text)}`;
-
-    window.open(whatsapp);
-
     console.log(encodeURIComponent(order_text));
-    /* https://wa.me/5521963120000?text=urldamensagempronta */
+
+    console.log(`${type_maindish} , ${price_maindish}`);
+    console.log(`${type_drink} , ${price_drink}`);
+    console.log(`${type_dessert} , ${price_dessert}`);
+    console.log(`TOTAL , ${total}`);
+
+    const overlay_choice = document.querySelector(".overlay");
+
+    overlay_choice.classList.remove("hidden_overlay");
+    overlay_choice.classList.add("show");
+
+    const maindish_choice = document.querySelector(".maindish_row .item1");
+    const drink_choice = document.querySelector(".drink_row .item2");
+    const dessert_choice = document.querySelector(".dessert_row .item3");
+
+    
+    maindish_choice.innerHTML = `${type_maindish}`;
+    drink_choice.innerHTML = `${type_drink}`;
+    dessert_choice.innerHTML = `${type_dessert}`; 
+    
+    /*
+    maindish_choice.innerHTML = "type_maindish";
+    drink_choice.innerHTML = "type_drink";
+    dessert_choice.innerHTML = "type_dessert"; 
+    */
+
+    const maindish_price = document.querySelector(".maindish_row .price1");
+    const drink_price = document.querySelector(".drink_row .price2");
+    const dessert_price = document.querySelector(".dessert_row .price3");    
+    const total_price = document.querySelector(".total_row .pricetotal");    
+
+    
+    maindish_price.innerHTML = price_maindish.toFixed(2);
+    drink_price.innerHTML = price_drink.toFixed(2);
+    dessert_price.innerHTML = price_dessert.toFixed(2);
+    total_price.innerHTML = `R$ ${total.toFixed(2)}`;
 
 }
 
 
 /*================================================
-- Peça o nome e endereço
-    
-    Ao clicar em finalizar pedido, lance dois `prompt` para o usuário solicitando seu nome e endereço. 
-    Essas informações devem então serem adicionadas na mensagem final que é enviada por WhatsApp nesse **formato** 
-    (igualzinho, sem nenhum caracter a mais):
 
-    Olá, gostaria de fazer o pedido:
-    - Prato: Frango Yin Yang
-    - Bebida: Coquinha Gelada
-    - Sobremesa: Pudim
-    Total: R$ 27.70
-
-    Nome: Fulano
-    Endereço: Rua...
+    BONUS: CONFIRM ORDER
 
 ================================================*/
+
+
+function whatsapp() {
+
+    /* https://wa.me/5521963120000?text=urldamensagempronta */
+    const whatsapp = `https://wa.me/5516982266324?text=${encodeURIComponent(order_text)}`;
+    window.open(whatsapp);
+
+    const overlay_choice = document.querySelector(".overlay");
+    overlay_choice.classList.add("hidden_overlay");
+    overlay_choice.classList.remove("show");
+
+}
+
+
+function cancel() {
+
+    const overlay_choice = document.querySelector(".overlay");
+    overlay_choice.classList.add("hidden_overlay");
+    overlay_choice.classList.remove("show");
+
+}
