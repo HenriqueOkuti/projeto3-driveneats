@@ -43,7 +43,7 @@ function select_item() {
         buttom_order2.innerHTML = "Fechar pedido";
 
         total = price_maindish + price_drink + price_dessert;
-        order_text = `Olá, gostaria de fazer o pedido: \n- Prato: ${type_maindish} \n- Bebida: ${type_drink} \n- Sobremesa: ${type_dessert} \nTotal: R$ ${(total).toFixed(2)} `;
+        order_text = `Olá, gostaria de fazer o pedido: \n- Prato: ${type_maindish} \n- Bebida: ${type_drink} \n- Sobremesa: ${type_dessert} \nTotal: R$ ${(total).toFixed(2)}`;
 
     }
 }
